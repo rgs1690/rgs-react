@@ -19,21 +19,29 @@ function Initialize() {
 
   return (
     <div className="App">
-      <h1>{joke.setup}</h1>
-      <h5>{btnText !== 'Get Punchline' ? joke.punchline : ''}</h5>
-      {btnText === 'Get a Joke' || btnText === 'Get Another Joke' ? (
-        <button onClick={getAJoke} className="btn btn-success" type="button">
-          {btnText}
-        </button>
-      ) : (
-        <button
-          onClick={() => setBtnText('Get Another Joke')}
-          className="btn btn-success"
-          type="button"
-        >
-          {btnText}
-        </button>
-      )}
+      <div className="header">
+        <div className="main-container">
+          <h1>{joke.setup}</h1>
+          <h5>{btnText !== 'Get Punchline' ? joke.punchline : ''}</h5>
+          {btnText === 'Get a Joke' || btnText === 'Get Another Joke' ? (
+            <button
+              onClick={getAJoke}
+              className="btn btn-success"
+              type="button"
+            >
+              {btnText}
+            </button>
+          ) : (
+            <button
+              onClick={() => setBtnText('Get Another Joke')}
+              className="btn btn-success"
+              type="button"
+            >
+              {btnText}
+            </button>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
