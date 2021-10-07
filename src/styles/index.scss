@@ -5,3 +5,18 @@ body {
   background-color: $favColor !important;
 }
 
+.main-container {
+  background-color: #474747;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 712px;
+    height: 735px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+.btn {
+  background-color: black;
+  border: 0;
+}
