@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import getJoke from '../api/data/jokeData';
 
 function Initialize() {
-  const [btnText, setBtnText] = useState('Get A Joke');
+  const [btnText, setBtnText] = useState('Get a Joke');
   const [joke, setJoke] = useState({});
   // const [showPunchline, setShowPunchline] = useState(false);
 
@@ -12,6 +12,7 @@ function Initialize() {
         setup: obj.setup,
         punchline: obj.delivery,
       });
+
       setBtnText('Get Punchline');
     });
   };
