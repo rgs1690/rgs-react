@@ -7,7 +7,8 @@ body {
 
 .main-container {
   background-color: #474747;
-    margin-top: 100px;
+  margin: auto;  
+  margin-top: 100px;
     margin-bottom: 100px;
     width: 712px;
     height: 735px;
@@ -16,7 +17,20 @@ body {
     border-radius: 20px;
     color: white;
 }
-.btn {
+.jokeBtn {
   background-color: black;
   border: 0;
+  width: 419px;
+  height: 98px;
+  font-size: 48px;
+  color:white;
+  border-radius: 20px;
+}
+img {
+  width: 512px;
+  height: 110px;
+  margin-bottom: 150px;
+}
+h1 {
+  margin-bottom: 150px;
 }

@@ -27,15 +27,15 @@ function Initialize() {
           />
         </div>
         <h1>{joke.setup}</h1>
-        <h5>{btnText !== 'Get Punchline' ? joke.punchline : ''}</h5>
+        <h1>{btnText !== 'Get Punchline' ? joke.punchline : ''}</h1>
         {btnText === 'Get a Joke' || btnText === 'Get Another Joke' ? (
-          <button onClick={getAJoke} className="btn btn-success" type="button">
+          <button onClick={getAJoke} className="jokeBtn" type="button">
             {btnText}
           </button>
         ) : (
           <button
             onClick={() => setBtnText('Get Another Joke')}
-            className="btn btn-success"
+            className="jokeBtn"
             type="button"
           >
             {btnText}
